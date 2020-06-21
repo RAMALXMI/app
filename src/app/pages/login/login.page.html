@@ -1,0 +1,16 @@
+<ion-header>
+<meta charset="utf-8" >
+  <ion-title >
+   <link rel="stylesheet" href="login.page.scss">
+  </ion-title>
+</ion-header>
+<body>
+  <ion-content padding class="bg-login">
+<form class="box" (ngSubmit)="login()" method="POST">
+  <h1>LOGIN</h1>
+  <input type="text" name="userid" [(ngModel)]="userid" placeholder="username" ngModel required>
+  <input type="password" name="password"  [(ngModel)]="password" placeholder="password" ngModel required>
+  <input type="submit" name="" value="login">
+  </form>
+</ion-content>
+</body>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>SELECT COUNTRY</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-searchbar (ionInput)="FilterJSONData($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list>
+    <ion-item *ngFor="let country of jsonData"> 
+    <ion-label> {{country.Country}}- {{country.Slug}}-{{country.ISO2}}</ion-label>
+    <ion-button (click)='navigatetoChan(country.Country)'>{{country.Country}}</ion-button>-->
+    
+  </ion-item>
+  </ion-list>
+
+</ion-content>

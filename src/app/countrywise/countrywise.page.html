@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="font-size:200%" style="text-align: center" >Country Specific Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="bg-countrywise">
+  <style> 
+    div {
+      width: 100px;
+      height: 100px;
+      background: powderblue;
+      transition: width 2s;
+    }
+    
+    #div1 {transition-timing-function: Country;}
+    #div2 {transition-timing-function: Confirmed;}
+    #div3 {transition-timing-function: Deaths;}
+    #div4 {transition-timing-function: Recovered;}
+ 
+    
+    div:hover {
+      width: 300px;
+    }
+  </style>
+    
+  <ion-grid>
+    <ion-col>
+
+      <ion-col>
+  <ion-label style="font-size:130%" position="relative" >
+    <div id="div1"><b> Country: {{country}} </b></div><br>
+  </ion-label>
+      </ion-col>
+<ion-row>
+    <ion-label style="font-size:130%" position="relative">
+    <div id="div2"><b>Confirmed: {{Confirmed}} </b> </div><br>
+  </ion-label>
+</ion-row> 
+  <ion-row>
+    <ion-label style="font-size:130%" position="relative">
+    <div id="div3"><b>Deaths: {{Deaths}} </b> </div><br>
+  </ion-label>
+  </ion-row>
+  <ion-row>
+    <ion-label style="font-size:130%" position="relative">
+    <div id="div4"><b> Recovered: {{Recovered}}</b></div><br>
+  </ion-label>
+  </ion-row>
+  </ion-col>
+  </ion-grid>
+  
+</ion-content>

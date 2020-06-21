@@ -1,0 +1,26 @@
+.button{
+  background-color: green($color: #000000);
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;  
+}
+.bg-home
+{
+        --background: url('/assets/sa.jpg') no-repeat center center / cover;
+}
+p{
+  word-wrap: break-word;
+  text-size-adjust:6px;
+
+  
+}
